@@ -102,6 +102,11 @@ impl Miner {
                             ) {
                                 let difficulty = hx.difficulty();
                                 if difficulty.gt(&best_difficulty) {
+                                //     println!(
+                                //         "New best hash: {} and difficulty: {}",
+                                //         bs58::encode(hx.h).into_string(),
+                                //         difficulty
+                                //     );
                                     best_nonce = nonce;
                                     best_difficulty = difficulty;
                                     best_hash = hx;

@@ -22,7 +22,7 @@ admin = []
 bincode = "1.3.3"
 bs58 = "0.5.1"
 bytemuck = "1.16"
-cached = "0.46.1"
+cached = "0.53.1"
 chrono = "0.4.38"
 clap = { version = "4.4.12", features = ["derive"] }
 colored = "2.0"
@@ -32,20 +32,21 @@ num_cpus = "1.16.0"
 ore-api = "2.1.0"
 ore-utils = "2.1.0"
 rand = "0.8.4"
-solana-cli-config = "^1.18"
-solana-client = "^1.18"
-solana-program = "^1.18"
-solana-rpc-client = "^1.18"
-solana-sdk = "^1.18"
-solana-transaction-status = "^1.18"
-spl-token = { version = "^4", features = ["no-entrypoint"] }
-spl-associated-token-account = { version = "^2.3", features = [
+solana-cli-config = "2.0.0"
+solana-client = "2.0.0"
+solana-program = "2.0.4"
+solana-zk-token-sdk = "2.0.4"
+solana-rpc-client = "2.0.0"
+solana-sdk = "2.0.0"
+solana-transaction-status = "2.0.0"
+spl-token = { version = "6.0.0", features = ["no-entrypoint"] }
+spl-associated-token-account = { version = "4.0.0", features = [
   "no-entrypoint",
 ] }
-tokio = "1.35.1"
+tokio = "1.39.2"
 
-# [patch.crates-io]
-# drillx = { path = "../drillx/drillx" }
-# ore-api = { path = "../ore/api" }
-# ore-utils = { path = "../ore/utils" }
+[patch.crates-io]
+drillx = { path = "../drillx/drillx" }
+ore-api = { path = "../ore/api" }
+ore-utils = { path = "../ore/utils" }
 
